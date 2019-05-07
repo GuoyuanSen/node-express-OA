@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>数据概况首页</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--基本样式-->
+    <link rel="stylesheet" href="../css/base.css"/>
+    <link rel="stylesheet" href="../css/menu.css"/>
+    <link rel="stylesheet" href="../css/hsCommon.css"/>
+    <link rel="stylesheet" href="../css/hsHome.css"/>
+    <link rel="stylesheet" href="../js/component/layui/css/layui.css"/>
+    <!-- 引入字体图标 -->
+    <link rel="stylesheet" href="../css/font-awesome-4.7.0/css/font-awesome.min.css">
+    <!--核心js插件-->
+    <script src="../js/jquery-3.1.1.min.js"></script>
+    <!--layui UI组件js-->
+    <script src="../js/component/layui/layui.js"></script>
+    <!--公共页面加载js-->
+    <script src="../js/handlebars-v4.0.10.js"></script>
+    <script src="../js/component/echarts.min.js"></script>
+    <script src="../js/component/hsPieChart.js"></script>
+    <script src="../js/dataProfileIndex.js"></script>
+    <script src="../js/public.js"></script>
+
+</head>
+<body>
+<div id="home">
+    <div class=" menuContainer" id="menuContainer">
+        <div class="brandLogo">
+            <!-- <img src="../imgs/logo.png" > -->
+        </div>
+        <div class="menu" id="menu">
+        </div>
+    </div>
+    <div class="content" id="content">
+        <div class="roterTrace">
+            <a href="">数据查询</a>
+            <i class="fa fa-angle-double-right"></i>
+            <a href="">短信数据查询</a>
+        </div>
+        <!--查询条件部分-->
+        <div class="searchConfigContainer">
+            <div class="hsContainer-fluid">
+                <label class="hsLabel">产品选择：</label>
+                <div class="hsCheckBox-inline">
+                    <ul id="product">
+                        <li data-productid="4abbd16f1dfd47b1afc7a1a8af9da11e" class="hsButton hsActive">PAYDAY</li>
+                        <li data-productid="" class="hsButton">小额分期</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="hsContainer-fluid ">
+                <label class="hsLabel">时间：</label>
+                <div class="hsCheckBox-inline">
+                    <ul id="days">
+                        <li data-days="0" class="hsButton hsActive">当日</li>
+                        <li data-days="7" class="hsButton">近七日</li>
+                        <li data-days="30" class="hsButton">近30天</li>
+                    </ul>
+                </div>
+
+            </div>
+            <div class="hsContainer-fluid clearfix">
+                <div class="hsItem">
+                    <div class="layui-form-item">
+                        <label class="layui-form-label">开始时间：</label>
+                        <div class="layui-input-block">
+                            <input class="layui-input" placeholder="开始日" id="startTime">
+                        </div>
+                    </div>
+                </div>
+                <div class="hsItem">
+                    <div class="layui-form-item">
+                        <label class="layui-form-label">结束时间：</label>
+                        <div class="layui-input-block">
+                            <input class="layui-input" placeholder="截止日" id="endTime">
+                        </div>
+                    </div>
+                </div>
+                <div class="hsItem">
+                    <form class="layui-form">
+                        <div class="layui-form-item">
+                            <label class="layui-form-label">渠道：</label>
+                            <div class="layui-input-block">
+                                <select name="channelName"  id="channelName"  lay-filter="channelName">
+                                    <option></option>
+                                </select>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="hsContainer-fluid">
+                <button class="hsButton searchButton" id="search">搜索</button>
+            </div>
+        </div>
+        <!--数据展示部分-->
+        <div class="showTableContainer">
+            <div class="centerLite">Today's Data</div>
+            <div class="cardContainer clearfix">
+                <div class="hsCard">
+                    <div class="hsCardTitle">总还款金额（元）</div>
+                    <div class="hsCardContentL" id="repayCount">0</div>
+                    <div class="hsCardImg"><img src="../imgs/sm.png" alt=""></div>
+                </div>
+                <div class="hsCard">
+                    <div class="hsCardTitle">总还款笔数（笔）</div>
+                    <div class="hsCardContentL" id="repaymentNumber">0</div>
+                    <div class="hsCardImg"><img src="../imgs/ss.png" alt=""></div>
+                </div>
+                <div class="hsCard">
+                    <div class="hsCardTitle">总绑卡数（张）</div>
+                    <div class="hsCardContentL" id="bindcardCount">0</div>
+                    <div class="hsCardImg"><img src="../imgs/sc.png" alt=""></div>
+                </div>
+                <div class="hsCard">
+                    <div class="hsCardTitle">注册数（个）</div>
+                    <div class="hsCardContentL" id="registerCount">0</div>
+                    <div class="hsCardImg"><img src="../imgs/sr.png" alt=""></div>
+                </div>
+                <div class="hsCard">
+                    <div class="hsCardTitle">应还未还单数（个）</div>
+                    <div class="hsCardContentL" id="donotRepay">0</div>
+                    <div class="hsCardImg"><img src="../imgs/donotRepay.png" alt=""></div>
+                </div>
+                <div class="hsCard">
+                    <div class="hsCardTitle">主动还款笔数（笔）</div>
+                    <div class="hsCardContentL" id="activeRepayment">0</div>
+                    <div class="hsCardImg"><img src="../imgs/mo.png" alt=""></div>
+                </div>
+            </div>
+            <!--数据展示图表-->
+            <div class="clearfix">
+                <div class="Flight">
+                    <div><span class="n"></span>新用户</div>
+                    <div><span class="o"></span>老用户</div>
+                    <div><span class="s"></span>总&nbsp;&nbsp;&nbsp;&nbsp;计</div>
+                </div>
+                <div class="pieChart clearfix">
+                    <div class="pieDiagramContainer">
+                        <div class="pieDiagram" id="pieDiagramUserOrderCount"></div>
+                        <div class="pieData" id="nUserOrderCount">0</div>
+                        <div class="pieData" id="oUserOrderCount">0</div>
+                        <div class="pieData" id="sUserOrderCount">0</div>
+                    </div>
+                    <div class="pieDiagramContainer">
+                        <div class="pieDiagram" id="pieDiagramUserMoneyCount"></div>
+                        <div class="pieData" id="nUserMoneyCount">0</div>
+                        <div class="pieData" id="oUserMoneyCount">0</div>
+                        <div class="pieData" id="sUserMoneyCount">0</div>
+                    </div>
+                    <div class="pieDiagramContainer">
+                        <div class="pieDiagram" id="pieDiagramUserauditsuccess"></div>
+                        <div class="pieData" id="nUserauditsuccess">0</div>
+                        <div class="pieData" id="oUserauditsuccess">0</div>
+                        <div class="pieData" id="sUserauditsuccess">0</div>
+                    </div>
+                    <div class="pieDiagramContainer">
+                        <div class="pieDiagram" id="pieDiagramUserloanCount"></div>
+                        <div class="pieData" id="nUserloanCount">0</div>
+                        <div class="pieData" id="oUserloanCount">0</div>
+                        <div class="pieData" id="sUserloanCount">0</div>
+                    </div>
+                    <div class="pieDiagramContainer">
+                        <div class="pieDiagram" id="pieDiagramUserloanSuccess"></div>
+                        <div class="pieData" id="nUserloanSuccess">0</div>
+                        <div class="pieData" id="oUserloanSuccess">0</div>
+                        <div class="pieData" id="sUserloanSuccess">0</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

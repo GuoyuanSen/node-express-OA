@@ -1,0 +1,20 @@
+<div class="pj_headerWrap">
+    <div class="pj_logo">
+        <span>运营管理后台</span>
+    </div>
+    <div class="pj_userName">
+        <span>欢迎，</span><span id="pj_uname" style="margin-right:20px"></span>
+        <a href="#" id="quitLogin">退出</a>
+    </div>
+</div>
+<script>
+    $("#quitLogin").click(function(){
+        // console.log("aaa")
+        mAjax('../login/authLogout.do','',function (data) {
+            if (data.code == 200){
+                window.location.href = '../login.jsp';
+                //window.close();
+            }
+        })
+    })
+</script>

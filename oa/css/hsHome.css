@@ -1,0 +1,496 @@
+/*reset layui css*/
+input.layui-input, input.layui-select, input.layui-textarea{
+    border-radius: 4px;
+}
+.layui-form-label{
+    color: #FFFFFF;
+    font-weight: 400;
+    line-height: 40px;
+    text-align: right;
+    vertical-align: middle;
+    margin: 0;
+    font-size: 16px;
+}
+/*默认容器*/
+.hsContainer-fluid{
+    width: 100%;
+    display: block;
+    position: relative;
+    padding: 12px 0;
+    clear: both;
+}
+.hsDiv{
+    width: 100%;
+    display: block;
+    position: relative;
+    padding: 5px 0;
+}
+/*按钮默认样式*/
+.hsButton{
+    display: block;
+    height: 40px;
+    line-height: 40px;
+    color: #FFFFFF;
+    padding: 0 20px;
+    margin: 0 15px;
+    font-size: 16px;
+    border-radius: 20px;
+    cursor: pointer;
+    min-width: 100px;
+    text-align: center;
+}
+.searchButton{
+    min-width: 180px;
+    background-color: #5a90b9;
+}
+.clearSearch{
+    min-width: 180px;
+    background-color: #9f6e5c;
+}
+.createButton{
+    min-width: 180px;
+    background-color: #009688;
+}
+.createButton:hover{
+    color: #FFFFFF;
+}
+/*label*/
+.hsLabel{
+    display: inline-block;
+    width: 80px;
+    color: #FFFFFF;
+    font-weight: 400;
+    line-height: 40px;
+    text-align: left;
+    vertical-align: middle;
+    margin: 0;
+    font-size: 16px;
+}
+/*多选框*/
+.hsCheckBox-inline{
+    display: inline-block;
+    margin-right: 15px;
+    vertical-align: middle;
+}
+.hsCheckBox{
+    display: block;
+    padding: 10px 0;
+}
+.hsCheckBox ul，.hsCheckBox-inline ul{
+    display: inline-block;
+    clear: both;
+    vertical-align: middle;
+}
+.hsCheckBox ul li,.hsCheckBox-inline ul li{
+    float: left;
+    background-color: #2d343f;
+    color: #777d84;
+}
+ul li.hsActive,a.hsActive{
+    color: #FFFFFF;
+    background-color: #5a90b9;
+}
+/*input*/
+.hsInput{
+    display: block;
+    width: 100%;
+    padding-left: 10px;
+    height: 38px;
+    line-height: 38px;
+    line-height: 36px\9;
+    border: 1px solid #e6e6e6;
+    background-color: #fff;
+    border-radius: 4px;
+}
+/*select*/
+.hsSelect{
+    display: block;
+    position: relative;
+}
+.hsSelect cite i{
+    display: block;
+    position: absolute;
+    height: 40px;
+    padding: 0 5px;
+    cursor: pointer;
+    line-height: 40px;
+    font-size: 26px;
+    right: 0;
+    top: 0;
+    transition: all .3s;
+    -webkit-transition: all .3s;
+}
+.hsSelect ul{
+
+    width: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    position: absolute;
+    left: 0;
+    top: 41px;
+    max-height: 136px;
+    background-color: #fff;
+    z-index: 9999;
+}
+.hsSelect ul li{
+    display: block;
+    padding-left: 10px;
+    line-height: 34px;
+    border-bottom: 1px dashed #9c9c9c;
+    z-index: 9999;
+    cursor: pointer;
+}
+.hsSelect ul li:hover{
+    background-color: #2D93CA;
+    cursor: pointer;
+    color: #FFFFFF;
+}
+.hsSelect ul li:last-of-type{
+    border-bottom: 0;
+}
+.hsSelect cite{
+    display: block;
+    width: 170px;
+    padding-left: 10px;
+    height: 38px;
+    line-height: 38px;
+    border: 1px solid #e6e6e6;
+    background-color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+}
+/*默认form表单 容器*/
+.hsItem{
+    float: left;
+    min-width: 280px;
+    margin-right: 10px;
+}
+.hsList{
+    margin-right: 20px;
+}
+.hsList span{
+    display: inline-block;
+    line-height: 36px;
+    color: #eeeeee;
+    margin-right: 10px;
+}
+.hsInput-inline{
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+}
+.hsInput-block{
+    display: block;
+    vertical-align: middle;
+    position: relative;
+}
+
+/*hsTable*/
+.hsTableContainer{
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+.hsTableContainer ul{
+    display: block;
+    width: 100%;
+    height: auto;
+    border-top: 1px solid #323840;
+}
+.hsTableContainer ul li{
+    width: 100%;
+    border-bottom: 1px solid #323840;
+    display: -webkit-box;  /* 老版本语法: Safari, iOS, Android browser, older WebKit browsers. */
+    display: -moz-box;     /* 老版本语法: Firefox (buggy) */
+    display: -ms-flexbox;  /* 混合版本语法: IE 10 */
+    display: -webkit-flex; /* 新版本语法: Chrome 21+ */
+    display: flex;         /* 新版本语法: Opera 12.1, Firefox 22+ */
+}
+.hsTableContainer ul li div{
+    box-flex:1.0;
+    -webkit-flex: 1;        /* Chrome */
+    -ms-flex: 1;          /* IE 10 */
+    flex: 1;                /* NEW, Spec - Opera 12.1, Firefox 20+ */
+    -webkit-box-flex: 1;     /* OLD - iOS 6-, Safari 3.1-6 */
+    -moz-box-flex: 1;       /* OLD - Firefox 19- */
+    color: #bcbdbf;
+    font-size: 16px;
+    text-align: center;
+    line-height: 48px;
+}
+.hsTableContainer ul li div a{
+    color: #20a0ff;
+    font-size: 14px;
+    text-align: center;
+    display: inline-block;
+    line-height: 36px;
+    cursor: pointer;
+    margin-right: 4px;
+}
+.hsTableHead{
+    background-color: #4f525d;
+    color: #FFFFFF;
+}
+.hsTableBody{
+   border-top: 0 none;
+}
+.hsTableFoot{
+    bottom: 18px;
+    left: 0;
+    width: 100%;
+    height: 20px;
+    line-height: 20px;
+    *height: 20px;
+    *line-height: 20px;
+    color: #767B83;
+    font-size: 14px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.hsTableFoot div{
+    display: inline-block;
+    *display: inline;
+    vertical-align: top;
+    margin-right: 8px;
+}
+.hsPrev{
+    display: inline-block;
+    *display: inline;
+    vertical-align: top;
+    margin-right: 10px;
+    cursor: pointer;
+    color: #ffffff;
+}
+.hsNext{
+    display: inline-block;
+    *display: inline;
+    vertical-align: top;
+    cursor: pointer;
+    color: #ffffff;
+}
+.hsCurrentPage{
+    display: inline-block;
+    *display: inline;
+    height: 18px;
+    line-height: 18px;
+    *line-height: 18px;
+    text-align: center;
+    border: 1px solid #ced2d8;
+    background-color: #659cdc;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    behavior: url('../js/component/PIE/ie-css3.htc');
+    color: #eef1f5;
+    margin: 0 2px;
+    width: 90px;
+}
+.hsTotalPage{
+    display: inline-block;
+    *display: inline;
+    height: 18px;
+    padding: 0 5px;
+    line-height: 18px;
+    vertical-align: top;
+    color: #659cdc;
+}
+
+/*居中的label*/
+.centerLite{
+    width: 100%;
+    display: block;
+    text-align: center;
+    color: #cfcfd1;
+    font-size: 16px;
+    padding: 10px 0;
+}
+.leftTitle{
+    width: 100%;
+    height: 30px;
+    color: #767b83;
+    font-size: 16px;
+    font-weight: 600;
+}
+/*card*/
+.cardContainer{
+    display: block;
+    border-bottom: 1px solid #323840;
+    border-top: 1px solid #323840;
+    border-left: 1px solid #323840;
+    display: -webkit-box;  /* 老版本语法: Safari, iOS, Android browser, older WebKit browsers. */
+    display: -moz-box;     /* 老版本语法: Firefox (buggy) */
+    display: -ms-flexbox;  /* 混合版本语法: IE 10 */
+    display: -webkit-flex; /* 新版本语法: Chrome 21+ */
+    display: flex;         /* 新版本语法: Opera 12.1, Firefox 22+ */
+}
+.hsCard{
+    box-flex:1.0;
+    -webkit-flex: 1;        /* Chrome */
+    -ms-flex: 1;          /* IE 10 */
+    flex: 1;                /* NEW, Spec - Opera 12.1, Firefox 20+ */
+    -webkit-box-flex: 1;     /* OLD - iOS 6-, Safari 3.1-6 */
+    -moz-box-flex: 1;       /* OLD - Firefox 19- */
+    padding: 20px 0;
+    border: 1px solid #30363e;
+    color: #bcbdbf;
+}
+.hsCard .hsCardTitle{
+    padding: 8px 0;
+    text-align: center;
+}
+.hsCard .hsCardTitle img{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+}
+.hsCard .hsCardTitle span{
+    display: inline-block;
+    font-size: 14px;
+    margin-left: 10px;
+}
+.hsCard .hsCardContent{
+    font-size: 32px;
+    margin: 10px 0;
+    min-height: 150px;
+}
+.hsCard .hsCardContentLine{
+    margin: 15px 0;
+    margin-left: 16%;
+    height: 30px;
+    font-size: 16px;
+    line-height: 30px;
+}
+.hsCard .hsCardContentL{
+    padding: 15px;
+    font-size: 30px;
+    line-height: 36px;
+    text-align: center;
+}
+.hsCard .hsCardContentLine img{
+    width: 20px;
+    height: 20px;
+    border-radius: 3px;
+    display: inline-block;
+}
+.hsCard .hsCardContentLine span:first-of-type{
+    margin-left: 10px;
+    display: inline-block;
+}
+.hsCard .hsCardContentLine span:last-of-type{
+    text-align: center;
+    display: inline-block;
+}
+.hsCard .hsCardImg img{
+    width: 30px;
+    height: 30px;
+    margin: 0 auto;
+    display: block;
+}
+.hsLayer{
+    width:100%;
+    height:100%;
+    background-color: #0f1115;
+    opacity:0.8;
+    position:fixed;
+    top:0;
+    left:0;
+    z-index: 999;
+}
+.hsLayer-msg{
+    position:absolute;
+    background-color: #313236;
+    opacity:0.8;
+    z-index: 1000;
+    min-width: 180px;
+    border-radius: 3px;
+    text-align: center;
+    padding: 8px 15px;
+    font-size: 20px;
+    color: #ffffff;
+}
+.hsLayerContainer{
+    position:absolute;
+    /*display:none;*/
+    width: 500px;
+    height: 600px;
+    opacity:1;
+    background-color: #313236;
+    z-index: 1000;
+}
+.hsOffset-center{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.hsOffset-top{
+    margin-top: 10px;
+    top: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.hsOffset-left{
+    top:50%;
+    left: 15px;
+    margin-left: 10px;
+    transform: translateY(-50%);
+}
+.hsOffset-right{
+    top:50%;
+    right: 15px;
+    margin-right: 10px;
+    transform: translateY(-50%);
+}
+.hsOffset-bottom{
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.hsOffset-lt{
+    top: 15px;
+    left: 15px;
+}
+.hsOffset-lr{
+    top: 15px;
+    left: 15px;
+
+}
+.hsOffset-rt{
+    top: 15px;
+    left: 15px;
+
+}
+.hsOffset-rb{
+    top: 15px;
+    left: 15px;
+}
+.hsLayerTitle{
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    line-height: 2;
+    font-size: 20px;
+    color:#e0e0e1;
+}
+.hsLayerCancel{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+    line-height: 2;
+    font-size: 20px;
+    color:#e0e0e1;
+}
+.hsLayerCancel i{
+   font-size: 20px;
+}
+.hsLayerContent{
+    /*background-color: #fff;*/
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 0 20px 20px 20px;
+    width: 100%;
+    height: 90%;
+}
+

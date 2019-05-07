@@ -1,0 +1,39 @@
+.pj_header{
+    /*background: #f3f3f3;*/
+    background: -ms-linear-gradient(top, #f3f3f3, #82a3ca);
+    background:-moz-linear-gradient(top,#f3f3f3,#82a3ca);
+    background:-webkit-gradient(linear, 0% 0%, 0% 100%,from(#f3f3f3), to(#82a3ca));
+    background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#f3f3f3), to(#82a3ca));
+    background: -webkit-linear-gradient(top, #f3f3f3, #82a3ca);
+    background: -o-linear-gradient(top, #f3f3f3, #82a3ca);
+}
+.pj_headerWrap{
+   /*width:1120px;*/
+    margin:0 auto;
+    overflow: auto;
+    font-size: 16px;
+    color:#333
+}
+.pj_headerWrap>div{
+    width:50%;
+    float:left;
+    padding:10px 0px;
+}
+.pj_logo{
+    text-align: left;
+    color: #333;
+}
+.pj_logo  img{
+    vertical-align: middle;
+}
+.pj_userName{
+    text-align: right;
+    color: #333;
+}
+.pj_userName{
+    text-align: right;
+    color: #333;
+}
+.pj_userName #quitLogin{
+    cursor: pointer;
+}

@@ -1,0 +1,333 @@
+@import "hsHome.css";
+#home{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+/* logo 样式*/
+.brandLogo{
+    width: 100%;
+    padding: 30px 50px;
+    border-bottom: 1px solid #4a4f59;
+    overflow: hidden;
+}
+.user{
+    position: fixed;
+    bottom: 20px;
+    left: -60px;
+    width: 120px;
+    height: 42px;
+    line-height: 42px;
+    background-color: #232a34;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    transition: all 0.5s;
+}
+.uName{
+    position: absolute;
+    left: 15px;
+    color: #e3e3e3;
+    cursor: pointer;
+}
+.user .uImg{
+    height: 34px;
+    width: 34px;
+    position: absolute;
+    right: 13px;
+    margin-top: 4px;
+    border-radius: 50%;
+    background-color: #75d1de;
+    color: #e3e3e3;
+    cursor: pointer;
+    text-align: center;
+    line-height: 34px;
+    font-size: 18px;
+}
+/*文章主体内容*/
+.viewClass{
+    height: 100%;
+}
+body{
+    min-width: 100%;
+}
+/*!*菜单导航容器*!*/
+/*.menuContainer{*/
+    /*display: none;*/
+    /*background-color: #333a46;*/
+    /*min-height: 100%;*/
+    /*padding: 0;*/
+    /*position: fixed;*/
+    /*top: 0;*/
+    /*left: 0;*/
+    /*width: 300px;*/
+    /*z-index: 222;*/
+/*}*/
+/*!*文章主体内容*!*/
+/*.content{*/
+    /*float: right;*/
+    /*background-color: #232a34;*/
+    /*padding: 0;*/
+    /*width: 100%;*/
+    /*min-height: 100%;*/
+/*}*/
+@media (min-width: 1024px) {
+    body{
+        min-width: 1280px;
+    }
+    /*菜单导航容器*/
+    .menuContainer{
+        background-color: #333a46;
+        min-height: 100%;
+        padding: 0;
+        float: left;
+        width: 18%;
+        min-width: 200px;
+    }
+    /*文章主体内容*/
+    .content{
+        float: right;
+        background-color: #232a34;
+        padding: 0;
+        width: 82%;
+        min-height: 100%;
+    }
+}
+@media (max-width: 1024px) {
+    body{
+        min-width: 100%;
+    }
+    /*菜单导航容器*/
+    .menuContainer{
+        display: none;
+        background-color: #333a46;
+        min-height: 100%;
+        padding: 0;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 300px;
+        z-index: 222;
+    }
+    /*文章主体内容*/
+    .content{
+        float: right;
+        background-color: #232a34;
+        padding: 0;
+        width: 100%;
+        min-height: 100%;
+    }
+}
+/*每页的页头路径导航*/
+.roterTrace{
+    width: 100%;
+    padding: 20px 0 20px 100px;
+    color: #bcbdbf;
+    font-size: 16px;
+    background-color: #29303b;
+}
+.roterTrace a{
+    color: #bcbdbf;
+}
+#goBack{
+    font-size: 16px;
+    padding-right: 10px;
+    color: #bcbdbf;
+    margin-right: 50px;
+    border-right: 1px solid #ffffff;
+}
+/*数据查询首页*/
+.searchConfigContainer{ /*搜索条件container*/
+    background-color: #29303b;
+    padding-left: 100px;
+}
+.showTableContainer{ /*表格展示container*/
+    padding: 35px 100px 30px 100px;
+}
+/*card 样式*/
+.totalData{
+    width: 60%;
+    float: left;
+}
+.todayData{
+    width: 40%;
+    float: left;
+}
+
+/*pie chart*/
+.Flight{
+    float: left;
+    padding-top: 305px;
+    width: 10%;
+    height: 100%;
+}
+.mFlight{
+    float: left;
+    width: 10%;
+    height: 100%;
+}
+.Flight div{
+    text-align: center;
+    font-size: 14px;
+    color: #a6adb3;
+    line-height: 60px;
+    position: relative;
+    border-bottom: 1px solid #30363e;
+    border-top: 1px solid #30363e;
+}
+.Flight div span.n{
+    width: 15px;
+    display: inline-block;
+    height: 15px;
+    vertical-align: middle;
+    margin-right: 3px;
+    background-color: #f29b76;
+}
+.Flight div span.o{
+    width: 15px;
+    display: inline-block;
+    height: 15px;
+    vertical-align: middle;
+    margin-right: 3px;
+    background-color: #66a8d9;
+
+}
+.Flight div span.s{
+    width: 15px;
+    display: inline-block;
+    height: 15px;
+    vertical-align: middle;
+    margin-right: 3px;
+    background-color: #00B83F;
+}
+.pieChart{
+    /*padding-left: 80px;*/
+    width: 90%;
+    float: left;
+}
+.pieDiagramContainer{
+    float: left;
+    width: 20%;
+}
+.pieDiagram{
+    width: 100%;
+    height: 280px;
+    /*padding: 25px;*/
+    margin-bottom: 25px;
+}
+.pieData{
+    text-align: center;
+    font-size: 16px;
+    color: #a6adb3;
+    line-height: 60px;
+    border-bottom: 1px solid #30363e;
+    border-top: 1px solid #30363e;
+}
+/*tchart*/
+.tChart{
+    border-top: 1px solid #30363e;
+}
+.tChart ul li {
+    height: 60px;
+    line-height: 60px;
+    border-bottom: 1px solid #30363e;
+}
+.tChart ul li{
+    height: 60px;
+
+}
+.tChart ul li span{
+    display: block;
+    width: 80px;
+    font-size: 14px;
+    color: #a6adb3;
+    float: left;
+}
+.tChart ul li div{
+    float: left;
+    width: 20%;
+    text-align: center;
+    font-size: 14px;
+    color: #a6adb3;
+}
+/*短信信息详情页*/
+
+.messageTodayData li{
+    float: left;
+    box-flex:1.0;
+    -webkit-flex: 1;        /* Chrome */
+    -ms-flex: 1;          /* IE 10 */
+    flex: 1;                /* NEW, Spec - Opera 12.1, Firefox 20+ */
+    -webkit-box-flex: 1;     /* OLD - iOS 6-, Safari 3.1-6 */
+    -moz-box-flex: 1;       /* OLD - Firefox 19- */
+}
+#updateHtml{
+    width: 100%;
+    background-color: #313236;
+    overflow: hidden;
+    min-height: 100%;
+}
+#updateHtml .layui-form-label{
+    color: #4D4D4D;
+}
+/*短信页面  msg弹出框*/
+.msgContainer{
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+}
+.msgAlert{
+    margin-bottom: 15px;
+    background-color: #37383c;
+}
+.msgAlert div{
+    font-size: 16px;
+    padding: 5px;
+    display: block;
+    color: #c0c0c1;
+}
+.msgAlert div:first-of-type{
+    color: #b63b4d;
+}
+/*短信页面  银行卡弹出框*/
+.bankCardContainer{
+    width: 100%;
+    padding: 20px;
+}
+.bankCard{
+    float: left;
+    width: 45%;
+    height: 160px;
+    border-radius: 5px;
+    padding: 15px ;
+    margin-right: 15px;
+    background-color: #37383c;
+    margin-bottom: 15px;
+}
+.bankCard div{
+    font-size: 16px;
+    padding: 5px;
+    display: block;
+    color: #c0c0c1;
+}
+.bankCard span{
+    margin-right: 10px;
+}
+/*用户信息详情页 弹出*/
+.imgCardContainer{
+    width: 100%;
+}
+.imgCardContainer .imgCard{
+    width: 350px;
+    height: 300px;
+    float: left;
+    margin-right: 10px;
+    padding: 20px;
+    margin-bottom: 10px;
+}
+.imgCardContainer .imgCard img{
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+

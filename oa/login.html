@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html >
+<head>
+    <meta charset="UTF-8">
+    <title>用户信息查询</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--基本样式-->
+    <link rel="stylesheet" href="./css/base.css"/>
+    <link rel="stylesheet" href="./css/login.css"/>
+    <!-- 引入字体图标 -->
+    <link rel="stylesheet" href="./css/font-awesome-4.7.0/css/font-awesome.min.css">
+    <!--核心js插件-->
+    <script src="./js/jquery-3.1.1.min.js"></script>
+    <!--公共页面加载js-->
+    <script src="./js/login.js"></script>
+</head>
+<body>
+    <div id="loginBox">
+
+            <div class="login">
+                <div class="login_box ">
+                   Login
+                </div>
+                <div class="login_userName">
+                    <img src="./imgs/user.png">
+                    <input type="text" placeholder="用户名" id="username" autocomplete="off">
+                </div>
+                <div class="login_password">
+                    <img src="./imgs/pswd.png">
+                    <input type="password" placeholder="密码" id="password" autocomplete="off">
+                </div>
+                <div class="login_button" id="loginBtn">Enter</div>
+            </div>
+        </div>
+
+</body>
+</html>
+<script>
+ $("#loginBox .login .login_button").on("click",login);
+function login(){
+    var username = $("#loginBox .login  input[type=text]").val();
+    var password = $("#loginBox .login input[type=password]").val();
+    console.log(username,password)
+   
+    var url ="http://localhost:3000/oa/film/login";
+    var parmas={
+            username:username,
+            password:password
+        }
+    postAjax(url,parmas,function(res){
+        console.log(res)
+        if(res.status == "0"){
+            location.href="http://127.0.0.1:5500/oa/page/film.html"
+        }else{
+            console.log("出现错误",res.status)
+        }
+   },(err)=>{
+        console.log(err,"错误")
+    })
+}   
+</script>

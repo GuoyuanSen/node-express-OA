@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>电影管理</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--基本样式-->
+    <link rel="stylesheet" href="../css/base.css"/>
+    <link rel="stylesheet" href="../css/hsCommon.css"/>
+    <link rel="stylesheet" href="../css/common.css"/>
+    <link rel="stylesheet" href="../js/component/layui/css/layui.css"/>
+    <!-- 引入字体图标 -->
+    <link rel="stylesheet" href="../css/font-awesome-4.7.0/css/font-awesome.min.css">
+    <!--核心js插件-->
+    <script src="../js/jquery-3.1.1.min.js"></script>
+    <!-- <script>
+        if (!req.session.user) {
+            window.location.href = "../login.html"
+        }
+    </script> -->
+    <!--layui UI组件js-->
+    <script src="../js/component/layui/layui.js"></script>
+    <!--公共页面加载js-->
+    <script src="../js/component/hsTable.js"></script>
+    <script src="../js/film/film.js"></script>
+    <script src="../js/public.js"></script>
+</head>
+<body>
+<div id="updateHtml" style="display: none;background-color: #ffffff;">
+
+        <div style="padding: 20px;" class="clearfix">
+            <div class="hsContainer-fluid clearfix">
+                <label class="layui-form-label">名称：</label>
+                <div class="layui-input-block">
+                    <input type="text" class="layui-input" placeholder="请输入名称" id="updateFilmName" >
+                </div>
+            </div>
+            <div class="hsContainer-fluid clearfix">
+                <label class="layui-form-label">标题：</label>
+                <div class="layui-input-block">
+                    <input type="text" class="layui-input" placeholder="请输入主演" id="updateRole">
+                </div>
+            </div>
+            <div class="hsContainer-fluid clearfix">
+                <label class="layui-form-label">描述：</label>
+                <div class="layui-input-block">
+                    <input type="text" class="layui-input" placeholder="请输入描述" id="updateDescribe">
+                </div>
+            </div>
+            <div class="hsContainer-fluid clearfix">
+                <label class="layui-form-label">图片：</label>
+                <div class="layui-input-block">
+                    <div id="updateBtn" style="width:30px;height: 30px;border: 1px dashed #999;font-size: 50px;line-height: 30px;text-align: center;color:#999;cursor: pointer;">+</div>
+                    <input type="file" class="layui-input"  id="updateImgsrc" style="display:none">
+                    <img src="" alt="" id="showimg" style="width: 100px;">
+                </div>
+            </div>
+            <div class="hsContainer-fluid clearfix">
+                <label class="layui-form-label">资产：</label>
+                <div class="layui-input-block">
+                    <input type="text" class="layui-input" placeholder="请输入资产" id="updateScore">
+                </div>
+            </div>
+            <div class="hsContainer-fluid clearfix">
+                <div class="layui-form-item">
+                    <label class="layui-form-label">时间：</label>
+                    <div class="layui-input-block">
+                        <input class="layui-input" placeholder="时间" id="updateReleaseTime">
+                    </div>
+                </div>
+            </div>
+            <div class="hsContainer-fluid clearfix">
+                <button class="hsButton searchButton" id="saveBtn">确定</button>
+            </div>
+        </div>
+
+
+</div>
+<div id="home" style="clear: both;overflow: hidden;">
+    <div class="menuContainer" id="menuContainer">
+        <div class="brandLogo">
+            <img src="https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=580907026,1665271072&fm=26&gp=0.jpg" >
+        </div>
+        <div class="menu" id="menu"></div>
+    </div>
+    <div class="content" id="content">
+        <div id="header"></div>
+        <div class="clearfix">
+            <div class="searchConfigContainer" style="float:left">
+                <div class="hsContainer-fluid clearfix">
+                    <button class="hsButton searchButton alignLeft" id="addFilm">添加用户</button>
+                </div>
+            </div>
+            <div class="searchConfigContainer" style="float:left">
+                <div class="hsContainer-fluid clearfix">
+                    <input type="text" name="seek" class="seek" placeholder="请输入要搜索的内容" style="height:40px;border-radius:5px;">
+                    <button class="seek_button btn btn-default" class="hsButton  alignRight" id="findFilm" style="width:80px;background: #5a90b9;height: 40px;">搜索</button>
+                   
+                </div>
+            </div>
+        </div>
+        
+        <div class="showTableContainer">
+            <h1 class="hsLabel">列表内容</h1>
+            <div id="tableContainer">
+                
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,403 @@
+/*创建优惠劵创建活动title*/
+.addTitle{
+    width: 100%;
+    height: 20px;
+    margin-bottom: 15px;
+}
+.addTitle a{
+    display: inline-block;
+    *display: inline;
+    vertical-align: middle;
+    font-size: 14px;
+    color: #ADB0B5;
+    line-height: 20px;
+}
+.addTitle span{
+    display: inline-block;
+
+    vertical-align: middle;
+    font-size: 14px;
+    color: #ADB0B5;
+    line-height: 20px;
+}
+.parent{
+    text-align: center;
+}
+.children{
+    margin: 0 auto;
+}
+
+/*活动管理页*/
+.activityCondition{
+    margin: 15px 0;
+    display: inline-block;
+    vertical-align: top;
+    width: 835px;
+}
+.addContentContainer{
+    margin: 20px 0 30px 0;
+}
+.couponsContainer{
+    margin-top: 20px;
+    padding-left: 15px;
+    clear: both;
+    height: auto;
+}
+.couponsItems{
+    margin: 15px 15px 15px 0;
+}
+.couponsOpt{
+    height: 38px;
+    margin-left: 10px;
+}
+.couponsOpt a{
+    line-height: 38px;
+    cursor: pointer;
+    padding: 0 8px;
+}
+/*创建活动优惠劵选项*/
+.addContentLable{
+    width: 100%;
+    height: 39px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #f3f4f8;
+}
+.addContentLable div{
+    width: 100%;
+    height: 20px;
+}
+.addContentLable .dot{
+    display: inline-block;
+    *display: inline;
+    vertical-align: middle;
+    width: 14px;
+    height: 14px;
+    background-color: #82a3ca;
+    -webkit-border-radius:7px;
+    -moz-border-radius: 7px;
+    border-radius: 7px;
+    behavior: url('../js/component/PIE/ie-css3.htc');
+}
+.addContentLable .addItem{
+    margin-left: 7px;
+    display: inline-block;
+    *display: inline;
+    vertical-align: middle;
+    color: #767B83;
+    font-size: 16px;
+    line-height: 20px;
+}
+.addContent{
+    width: 350px;
+}
+/*外部主体容器*/
+.messageModule{
+    width: 500px;
+    height: 100px;
+    border: 1px solid red;
+    margin-top: 20px;
+    visibility: hidden;
+}
+.addContentContainer .tinyTitle{
+    margin: 20px 0 20px 20px;
+    color: #767B83;
+    font-size: 14px;
+}
+/*搜索框常规宽度*/
+.middleContent{
+    width: 340px;
+    margin: 20px 0 20px 20px;
+}
+/*容器内部特殊宽度的项*/
+.specialAddItem{
+    width: 570px;
+    margin: 15px;
+}
+.specialAddItem .specialWord{
+    float: left;
+    line-height: 40px;
+    color: #ADB0B5;
+    font-size: 14px;
+}
+
+/*单选框按钮样式*/
+.whethersupport{
+	display: inline-block;
+    vertical-align: middle;
+    margin-left:3px;
+}
+/*添加和删除按钮*/
+
+a.delate{
+    color: #999999;
+}
+a.append{
+    color: #82a3ca;
+}
+
+/*自定义 输入框的label 和 input的容器*/
+.inputTitle{
+    float: left;
+    display: block;
+    padding: 9px 0;
+    font-weight: 400;
+    text-align: right;
+}
+.inputContent{    /*input内容 input标签*/
+    *display: inline;
+    display: inline-block;
+    vertical-align: middle;
+    width: 190px;
+    position: relative;
+}
+.inputContent span{
+    color: #a7abb1;
+    cursor: pointer;
+}
+
+/*描述框样式*/
+textarea.description{
+    width: 420px;
+    height: 220px;
+    *height: 220px;
+    margin: 20px 0 20px 20px;
+    resize: none;
+    color: #ADB0B5;
+    font-size: 14px;
+    padding: 7px;
+    border: 1px solid #ccc;
+}
+.opt{
+    display: inline-block;
+    *display: inline;
+    color: #999999;
+    font-size: 14px;
+    vertical-align: top;
+    margin-right: 5px;
+}
+
+
+/*产品类型按钮*/
+.productTitle{
+    width: 24%;
+    margin: 0 auto;
+    line-height: 40px;
+    padding: 20px 0;
+    clear: both;
+}
+.productTitle div{
+    float: left;
+    padding: 0 8px;
+    text-align: center;
+    border-radius: 5px;
+    font-size: 18px;
+    display: inline-block;
+    border: 1px solid #4D4D4D;
+    cursor: pointer;
+    background-color: #fff;
+}
+.productTitle div.activity{
+    background-color: #1E9FFF;
+    color: #FFFFFF;
+}
+/*days  0 7 30 button*/
+.itemButton{
+    margin: 0 auto;
+    display: block;
+    clear: both;
+}
+.itemButton li{
+    line-height: 40px;
+    float: left;
+    width: 33%;
+    text-align: center;
+    border: 1px solid #bca580;
+    border-radius: 4px;
+    background-color: #fff;
+    cursor: pointer;
+}
+ul li.activity{
+    background-color: #1E9FFF;
+    color: #FFFFFF;
+}
+/*show data container*/
+.majorContent{
+    background-color: #fdfdfd;
+    margin-top: 25px;
+    padding-top: 35px;
+}
+/*data show item*/
+.dataShowUl{
+    display: block;
+}
+.dataBox{
+    display: block;
+    margin-left: 25px;
+}
+.dataBox li{
+    padding: 5px 15px;
+    float: left;
+    text-align: center;
+}
+.dataShowUl li{
+    width: 20%;
+    float: left;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.itemTitile{
+    font-weight: 500;
+    font-family: "Microsoft Sans Serif";
+    font-size: 26px;
+    margin-bottom: 5px;
+}
+.itemContent{
+    font-family: "Microsoft Sans Serif";
+    font-size:38px;
+}
+.itemContent div{
+    font-size:20px;
+    line-height: 50px;
+}
+
+
+/*文件上传*/
+.bannerUpload{
+    width: 130px;
+    height: 40px;
+    font-size: 14px;
+    color: #666666;
+    background-color: #fcfcfc;
+    border: 1px solid #ced2d8;
+    border-radius: 2px;
+    *display: inline;
+    display: inline-block;
+    vertical-align: middle;
+    cursor: pointer;
+}
+.bannerUpload:hover{
+    background-color: #efefef;
+    border-color: #ced2d8;
+}
+.uploadradioContainer{
+    *display: inline;
+    display: inline-block;
+    opacity: 0;
+    filter: alpha(opacity:0);
+}
+.uploadradioContainer label{
+    *display: inline;
+    display: inline-block;
+    vertical-align: middle;
+    color: #767B83;
+    font-size: 14px;
+}
+.uploadradioContainer span{
+    *display: inline;
+    display: inline-block;
+    vertical-align: middle;
+    color: #ffffff;
+    border: 1px solid  #82a3ca;
+    background-color: #82a3ca;
+    border-radius: 50%;
+    height: 14px;
+    width: 14px;
+    font-size: 14px;
+    line-height: 14px;
+    margin-left: 2px;
+    text-align: center;
+}
+
+.productOpt{
+    margin-top: 20px;
+    height: 100%;
+}
+.productTitle{
+    width: 24%;
+    margin: 0 auto;
+    line-height: 40px;
+}
+.productTitle div{
+    padding: 0 8px;
+    text-align: center;
+    border-radius: 5px;
+    font-size: 18px;
+    display: inline-block;
+    border: 1px solid #4D4D4D;
+    cursor: pointer;
+    background-color: #fff;
+}
+.productTitle div.activity{
+    background-color: #2187e7;
+    color: #FFFFFF;
+}
+.majorContent{
+    background-color: #fdfdfd;
+    margin-top: 25px;
+}
+.itemButton{
+    width: 50%;
+    margin: 0 auto;
+    display: block;
+}
+.itemButton li{
+    line-height: 40px;
+    float: left;
+    width: 24%;
+    text-align: center;
+    border: 1px solid #bca580;
+    border-radius: 4px;
+    background-color: #fff;
+    cursor: pointer;
+}
+ul li.activity{
+    background-color: #2187e7;
+    color: #FFFFFF;
+}
+.item{
+    margin-top: 30px;
+}
+.item li{
+    width: 20%;
+    float: left;
+    text-align: center;
+    margin-bottom: 20px;
+    display: none;
+}
+.item .itItile{
+    font-weight: 500;
+    font-family: "Microsoft Sans Serif";
+    font-size: 26px;
+    margin-bottom: 5px;
+}
+.item .itShow{
+    font-weight: 700;
+    font-family: "Microsoft Sans Serif";
+    font-size:38px;
+}
+.item .itShow div{
+    font-weight: 700;
+    font-family: "Microsoft Sans Serif";
+    font-size:20px;
+    line-height: 50px;
+}
+.orderConferButton{
+    margin-top: 25px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

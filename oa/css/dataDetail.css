@@ -1,0 +1,77 @@
+.productOpt{
+    margin-top: 20px;
+    height: 100%;
+}
+.productTitle{
+    width: 24%;
+    margin: 0 auto;
+    line-height: 40px;
+}
+.productTitle div{
+    padding: 0 8px;
+    text-align: center;
+    border-radius: 5px;
+    font-size: 18px;
+    display: inline-block;
+    border: 1px solid #4D4D4D;
+    cursor: pointer;
+    background-color: #fff;
+}
+.productTitle div.activity{
+    background-color: #2187e7;
+    color: #FFFFFF;
+}
+.majorContent{
+    background-color: #fdfdfd;
+    margin-top: 25px;
+}
+.itemButton{
+    width: 50%;
+    margin: 0 auto;
+    display: block;
+}
+.itemButton li{
+    line-height: 40px;
+    float: left;
+    width: 24%;
+    text-align: center;
+    border: 1px solid #bca580;
+    border-radius: 4px;
+    background-color: #fff;
+    cursor: pointer;
+}
+ul li.activity{
+    background-color: #2187e7;
+    color: #FFFFFF;
+}
+.item{
+   margin-top: 30px;
+}
+.item li{
+    width: 20%;
+    float: left;
+    text-align: center;
+    margin-bottom: 20px;
+    display: none;
+}
+.item .itItile{
+    font-weight: 500;
+    font-family: "Microsoft Sans Serif";
+    font-size: 26px;
+    margin-bottom: 5px;
+}
+.item .itShow{
+    font-weight: 700;
+    font-family: "Microsoft Sans Serif";
+    font-size:38px;
+}
+.item .itShow div{
+    font-weight: 700;
+    font-family: "Microsoft Sans Serif";
+    font-size:20px;
+    line-height: 50px;
+}
+.orderConferButton{
+    margin-top: 25px;
+}
+
